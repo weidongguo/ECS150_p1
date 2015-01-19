@@ -23,7 +23,8 @@ void reverse(char *str){
 void uppercase(char *str){
   int len = strlen(str), i;
   for(i = 0; i < len ; i++) {
-    str[i] = str[i] - ('a' - 'A'); 
+    if( str[i] >= 'a' && str[i] <= 'z')
+      str[i] = str[i] - ('a' - 'A'); 
   }
 }
 
@@ -33,15 +34,24 @@ void ppn(int *n) { //for testing only
 
 int main()
 {
-  char str[1024]; int p2id;  
-  write(1, "Please enter a string: ", 36-13); 
-  scanf("%s", str);
-  printf("%s\n", str);
-  int len = strlen(str); 
+  char ch; int p2id, len = 0;  
   int pfd[2], pfd2to1[2]; 
   pipe(pfd); pipe(pfd2to1);
-  write(pfd[1], str, len + 1);/*string + \0*/
-
+  
+  write(1, "Please enter a string: ", 36-13); 
+  
+  while(1) {
+    read(0, &ch, 1);
+    if( ch == '\n') {
+      write(pfd[1], "\0", 1);//append '\0' so can use string.h functions to process the string 
+      break;
+    }
+    len++;
+    write(pfd[1], &ch, 1);
+    write(1, &ch, 1);
+  }
+  write(1, "\n", 1); 
+  char str[len+1];
   if( (p2id = fork()) == 0 ) { // ***start process 2
     close(pfd[1]); // ensure no read block from pipe
     read(pfd[0], str, len + 1);
