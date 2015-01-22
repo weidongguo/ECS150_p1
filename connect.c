@@ -94,9 +94,9 @@ int main()
     close(pfd[0]);
     close(pfd[1]);
     char finalStr[len*2+1];
-    close(pfd2to1[1]); //ensure no read blcok
+    close(pfd2to1[1]); //ensure no read block
     read(pfd2to1[0], finalStr, len*2+1);
-    printf("compare: %d\n", strcmp(finalStr, str)); 
+    strcpy(str, finalStr);
     close(pfd2to1[0]);
   }   
   return 0;
