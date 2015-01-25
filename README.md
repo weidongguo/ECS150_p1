@@ -1,29 +1,11 @@
-# README #
+# READEME #
+# Assignment1 for ECS 150 Operating System #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### problem 1: done ###
+### problem 2: done ###
+### problem 3: done ###
+### problem 4: done ###
+### problem 5: done ###
+### problem 6: not done ###
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+-Weidong Guo
