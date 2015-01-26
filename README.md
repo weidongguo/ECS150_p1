@@ -6,6 +6,6 @@
 ### problem 3: done ###
 ### problem 4: done ###
 ### problem 5: done ###
-### problem 6: not done ###
+### problem 6: done ###
 
 -Weidong Guo
