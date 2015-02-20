@@ -1,0 +1,13 @@
+I am process 1, my process identifier is 15588 -->#parent's id: 15566.
+I am process 3, my process identifier is 15590 -->#parent's id: 15588.
+I am process 1, my process identifier is 15588 -->#parent's id: 15566.
+I am process 2, my process identifier is 15589 -->#parent's id: 15588.
+I am process 1, my process identifier is 15588 -->#parent's id: 15566.
+I am process 3, my process identifier is 15590 -->#parent's id: 15588.
+I am process 1, my process identifier is 15588 -->#parent's id: 15566.
+I am process 2, my process identifier is 15589 -->#parent's id: 15588.
+I am process 1, my process identifier is 15588 -->#parent's id: 15566.
+I am process 3, my process identifier is 15590 -->#parent's id: 15588.
+I am process 1, my process identifier is 15588 -->#parent's id: 15566.
+I am process 2, my process identifier is 15589 -->#parent's id: 15588.
+I am process 1, my process identifier is 15588 -->#parent's id: 15566.
